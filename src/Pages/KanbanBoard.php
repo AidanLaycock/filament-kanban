@@ -2,14 +2,13 @@
 
 namespace Mokhosh\FilamentKanban\Pages;
 
-use Filament\Pages\Page;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Mokhosh\FilamentKanban\Concerns\HasEditRecordModal;
 use Mokhosh\FilamentKanban\Concerns\HasStatusChange;
 use UnitEnum;
 
-class KanbanBoard extends Page
+class KanbanBoard extends \Filament\Resources\Pages\Page
 {
     use HasEditRecordModal;
     use HasStatusChange;
